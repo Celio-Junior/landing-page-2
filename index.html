@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="exemplo de site apresentado um pouco sobre empresa">
+  <link rel="stylesheet" href="./assets/css/style-global.css">
+  <link rel="stylesheet" href="./assets/css/style-menu.css">
+  <link rel="stylesheet" href="./assets/css/style-section.css">
+  <link rel="stylesheet" href="./assets/css/style-responsive.css">
+  <title>Company Algolia</title>
+</head>
+<body>
+
+  <input type="checkbox" id="close-menu">
+  <label for="close-menu" class="close-menu-label"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1><a href="#home" onclicl="document.getElementById('close-menu')">Logo</a></h1>
+      <nav>
+        <ul class="navigation" onclick="document.getElementById('close-menu').checked = false">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#employees">employees</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <span></span>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <section id="home" class="section main-bg">
+    <div class="main-content home-content">
+      <div class="paragraph-box">
+        <h2><strong>Algolia</strong> company<br> what is it?</h2>
+        <p>Uma plataforma de <strong>pesquisa</strong> como serviço proprietária americana projetada para casos de uso que exigem pesquisa <strong>relevante</strong> e de <strong>alta qualidade</strong>.</p>
+      </div>
+
+      <div class="card-img">
+        <img src="./assets/img/undraw_algolia_msba.svg" alt="imagem da page em arte do busca da empresa">
+      </div>
+    </div>
+  </section>
+
+  <section id="employees" class="section white-bg">
+    <div class="main-content employee-content">
+      <div class="paragraph-box">
+        <h2>Best employees</h2>
+
+        <p><span>employee name</span> lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis earum sapiente esse aperiam deserunt ex similique, cupiditate illo! Inventore laborum ea modi odit quibusdam exercitationem officiis fuga nulla numquam?</p>
+        
+        <p><span>employee name</span> lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis earum sapiente esse aperiam deserunt ex similique, cupiditate illo! Inventore laborum ea modi odit quibusdam exercitationem officiis fuga nulla numquam?</p>
+        
+        <p><span>employee name</span> lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis earum sapiente esse aperiam deserunt ex similique, cupiditate illo! Inventore laborum ea modi odit quibusdam exercitationem officiis fuga nulla numquam?</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="gallery" class="section main-bg">
+    <div class="main-content gallery-content">
+      <div class="paragraph-box">
+        <h2>Gallery</h2>
+        <p>Some random photos:</p>
+      </div>
+
+      <div class="grid-gallery">
+        <div class="card-img"><img src="https://source.unsplash.com/random/360x360?r=1" alt="photos random"></div>
+        <div class="card-img"><img src="https://source.unsplash.com/random/360x360?r=2" alt="photos random"></div>
+        <div class="card-img"><img src="https://source.unsplash.com/random/360x360?r=3" alt="photos random"></div>
+        <div class="card-img"><img src="https://source.unsplash.com/random/360x360?r=4" alt="photos random"></div>
+        <div class="card-img"><img src="https://source.unsplash.com/random/360x360?r=5" alt="photos random"></div>
+        <div class="card-img"><img src="https://source.unsplash.com/random/360x360?r=6" alt="photos random"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="languages" class="section white-bg">
+    <div class="main-content employee-content">
+      <div class="paragraph-box">
+        <h2>Most used company languages </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio voluptatum in, enim ipsum cum architecto? Dolor numquam distinctio maxime delectus aperiam, neque explicabo ab, saepe id nisi quas? Totam.</p>
+      </div>
+
+      <div class="responsive-table">
+        <table>
+          <caption>
+            The table below shows which languages ​​our directors use in each sector of the company:
+          </caption>
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Employee</th>
+              <th>Sector</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>Popó</td>
+              <td>Development Web</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>Antônio</td>
+              <td>Systems creation</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Denilson</td>
+              <td>Automation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section main-bg">
+    <div class="main-content contact-content">
+      <div class="contact-text-img">
+        <div class="paragraph-box">
+          <h2>Contact</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga suscipit repellendus voluptatibus unde earum ratione recusandae error, porro beatae doloribus officia consequatur sunt facilis numquam nemo eligendi quod impedit eius!</p>
+        </div>
+        <div class="card-img">
+          <img src="./assets/img/undraw_informed_decision_p2lh.svg" alt="pagina de ajuda">
+        </div>
+      </div>
+
+      <form action="/">
+        <fieldset>
+          <legend>Contate-nos</legend>
+          <div class="input-box">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite o seu nome" id="nome">
+          </div>
+          <div class="input-box">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" placeholder="Digite o seu sobrenome" id="sobrenome">
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Digite o seu email" id="email">
+          </div>
+          <div class="input-box">
+            <label for="telefone">Telefone</label>
+            <input type="text" placeholder="  Digite o seu telefone" id="telefone">
+          </div>
+          <div class="input-box">
+            <label for="suges-prob">Sugestão/Problema</label>
+            <textarea name="suges-prob" id="suges-prob" cols="0" rows="0" placeholder="Digite sua sugestão ou problema que você está tendo" id="suges-prob"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit">Enviar mensage</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="white-bg">
+    <div class="main-content footer-content">
+      <h2 class="title-logo">Logo</h2>
+
+      <nav>
+        <h2>Mapa do site</h2>
+        <ul class="navigation-footer">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#employees">employees</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <span></span>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Contatos da empresa</h2>
+        <address>
+          Endereço: <a href="#">Rua seila, bairro</a> <br>
+          telefone: <a href="#">9999878971</a><br>
+          email: <a href="#" rel="sem link">celiogostoso@gmail.com</a>
+        </address>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1, h2{
+  font-size: 6.5rem;
+  /* width:max-content; */
+}
+
+a{
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: inherit;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 75rem;
+  min-width: 50rem;
+}
+
+table caption{
+  caption-side: top;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+table tr td:first-child{
+  color: var(--fourth-color);
+  text-shadow: 0.1rem -0.2rem 0.2rem var(--secundary-color)
+}
+
+table th, table td{
+  font-size: 2.3rem;
+  border: 0.1rem solid var(--third-color);
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+:root{
+  --white-color: #f3eeee;
+  --gray-color: #cbcbcb;
+  --primary-color: #1C1773;
+  --secundary-color: #C8B96B;
+  --third-color: #181733;
+  --fourth-color: #736417;
+  --fifth-color: #ADAAF2;
+}
+
+.section{
+  min-height:100vh;
+}
+
+.white-bg{
+  background-color: var(--white-color);
+  color: var(--third-color);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-bg{
+  background-image: url(./../img/radiant-gradient.svg);
+  color: var(--white-color);
+  background-size: cover;
+}
+
+.main-content{
+  padding: 4rem 6rem;
+  width: 100%;
+  max-width: 125rem;
+  margin: 0 auto;
+}
+
+.responsive-table{
+  width: 100%;
+  overflow: auto;
+}

@@ -1,0 +1,246 @@
+/* section Home */
+.home-content{
+  margin-top: 7.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.paragraph-box{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.paragraph-box p{
+  font-size: 2rem;
+  word-spacing: 0.4rem;
+  text-align: justify;
+}
+
+/* section employee */
+
+.employee-content .paragraph-box p{
+  text-align: center;
+}
+
+.paragraph-box strong{
+  color: var(--fifth-color);
+  text-shadow: 0 0 1rem var(--fourth-color), -0.2rem -0.2rem 0.1rem #222;
+}
+
+.paragraph-box span{
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.paragraph-box span:hover{
+  color: var(--fourth-color);
+  text-shadow: 0 0 0.1rem var(--third-color);
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  transition: all 300ms ease-in-out;
+}
+
+.employee-content{
+  max-width: 80rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.employee-content h2{
+  margin: 0 auto 4rem;  
+}
+
+/* section gallery  */
+
+.gallery-content{
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.gallery-content .paragraph-box p{
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.grid-gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-gallery .card-img{
+  width: 100%;
+  min-width: 22rem;
+  max-width: 36rem;
+  overflow: hidden;
+}
+
+.grid-gallery .card-img img:hover{
+  transform: scale(1.1) translate(-5%, -5%)
+}
+
+/* section contact */
+.contact-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.8rem;
+  min-height: 100vh;
+}
+
+.contact-text-img{
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-content fieldset{
+  width: 100%;
+  border: none;
+  /* font-size: 3rem; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-content fieldset legend{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  /* margin: 1rem; */
+  gap: 1rem;
+}
+.input-box:nth-child(6){
+  width: 100%;
+}
+
+.input-box label{
+  font-size: 3rem;
+}
+
+.input-box input, .input-box textarea{
+  width: 100%;
+  font-size: 2.6rem;
+  padding: 1rem 2rem;
+  color: var(--primary-color);
+  font-style: italic;
+  border-radius: 1.4rem;
+  border: 0.3rem solid var(--third-color);
+  outline: 0.2rem solid var(--white-color);
+  transition: all 200ms ease-in-out;
+}
+
+.input-box textarea{
+  height: 100%;
+  min-height: 10rem;
+  max-height: 20rem;
+  min-width: 100%;
+  max-width: max-content;
+}
+
+.input-box input:focus, .input-box textarea:focus{
+  transform: scale(1.03);
+}
+
+.contact-content button{
+  position: relative;
+  font-size: 3rem;
+  padding: 1.5rem 2rem;
+  border: 0.2rem solid var(--white-color);
+  border-radius: 1.4rem;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.2rem var(--third-color);
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 200ms ease-out;
+}
+
+.contact-content button::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: var(--third-color);
+  border-radius: 1.4rem;
+  z-index: -1;
+  transition: all 300ms ease-in;
+}
+
+.contact-content button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem #fff, 0 0 3rem #fff, 0 0 4rem #fff;
+}
+
+.contact-content button:hover::before{
+  width: 100%;
+}
+
+/* section footer */
+.footer-content{
+  min-height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;/*isso afeta o grid*/
+  justify-items: center;/*isso afeta o grid*/
+  gap:3rem;
+}
+
+.footer-content h2:not(.title-logo){
+  font-size: 3rem;
+  /* text-align: center; */
+  margin-bottom: 2rem;
+}
+
+.footer-content div:last-child{
+  align-self: flex-start;
+}
+
+.navigation-footer{
+  list-style: none;
+  /* margin-left: 2rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-content a{
+  display: inline-block;
+  transition: all 150ms ease-in-out;
+  color: var(--primary-color)
+}
+
+.footer-content a:hover{
+  color: var(--fourth-color);
+  transform: scale(1.08);
+}
+
+.footer-content > div:last-child address, .footer-content > div:last-child a{
+  font-size: 2.3rem;
+}

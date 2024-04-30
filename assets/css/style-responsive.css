@@ -1,0 +1,86 @@
+#close-menu{
+  display:none;
+}
+
+@media (max-width:1020px){  
+  .home-content{
+    margin-top: 0;
+  }
+  .menu{
+    left: 100%;
+    width: 50%;
+    bottom: 0;
+    border-left: 1rem solid var(--third-color);
+    /* display: none; */
+    transition: all 600ms ease-in-out;
+  }
+  
+  .menu-content h1{
+    margin: 2rem 0;
+  }
+
+  .menu-content, .navigation{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation span{
+    display: none;
+  }
+
+  .close-menu-label::before{
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    content: "☰";
+    font-size: 3.5rem;
+    z-index: 2;
+    border: 0.2rem solid var(--secundary-color);
+    width: 5.5rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 0.8rem;
+    color: var(--secundary-color);
+    background-color: var(--third-color);
+    cursor:pointer;
+  }
+
+  #close-menu:checked~.menu{
+    /* display:block; */
+    left: 50%;
+    /* width: 50%; */
+  }
+
+  #close-menu:checked ~ .close-menu-label::before{
+    content: "✕";
+  }
+
+  /*mexe3r com home*/
+
+  /* mexer com grid */
+}
+
+@media (max-width:835px){
+  .home-content, .contact-text-img{
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-gallery{
+    grid-template-columns: 1fr 1fr;
+  }
+  .input-box{
+    width: 100%;
+  }
+  .footer-content{
+    white-space: nowrap;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 595px){
+  .grid-gallery{
+    grid-template-columns: 1fr;
+  }
+}

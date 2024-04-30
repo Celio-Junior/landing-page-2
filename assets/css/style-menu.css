@@ -1,0 +1,102 @@
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 0.1em solid var(--gray-color);
+  box-shadow: 0.1rem 0.2rem 0.3rem var(--gray-color);
+  z-index: 1;
+}
+
+.menu-content{
+  padding: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.menu-content h1 a{
+  font-size: 5.5rem;
+  color: var(--primary-color);
+}
+
+.navigation{
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.navigation a{
+  display: block;
+  padding: 2rem;
+  color: var(--primary-color);
+  text-shadow: 0.07rem 0rem 0.15rem var(--third-color);
+  position: relative;
+  z-index: 1;
+  transition-duration: 1s;
+}
+
+.navigation a::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1.1rem;
+  width: 0;
+  height: 0.25rem;
+  transition: all 200ms ease-in;
+  background-image:linear-gradient(to right, var(--fourth-color), var(--secundary-color), var(--fourth-color)) 
+}
+
+.navigation a:hover{
+  color: var(--secundary-color);
+  text-shadow: 0rem 0rem 0.3rem var(--white-color);
+}
+
+.navigation a:hover::after{
+  left: 25%;
+  width: 50%;
+}
+
+.navigation span{
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--third-color);
+  left: 0;
+  border-radius: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+
+/* hover do span */
+.navigation li:nth-child(1):hover~ span{
+  width: 10.8438rem;
+  transition: all 500ms ease-in-out;
+}
+
+.navigation li:nth-child(2):hover~ span{
+  left: 10.8438rem;
+  width: 15.9750rem;
+  transition: all 500ms ease-in-out;
+}
+
+.navigation li:nth-child(3):hover~ span{
+  left: calc(10.8438rem + 15.9750rem);
+  width: 12.3969rem;
+  transition: all 500ms ease-in-out;
+}
+
+.navigation li:nth-child(4):hover~ span{
+  left: calc(10.8438rem + 15.9750rem + 12.3969rem);
+  width: 16.1297rem;
+  transition: all 500ms ease-in-out;
+}
+
+.navigation li:nth-child(5):hover~ span{
+  left: calc(10.8438rem + 15.9750rem + 16.1297rem + 12.3969rem);
+  width: 12.7094rem;
+  transition: all 500ms ease-in-out;
+}
